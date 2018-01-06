@@ -39,8 +39,7 @@ function getPit() {
 
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
   xhr.open('GET', 'https://ukryama.com/xml?page=' + offset++, true);
-  xhr.setRequestHeader('Content-Type', 'text/xml');
-  xhr.setRequestHeader("Content-Type", "application/xml");
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   // 3. Отсылаем запрос
   xhr.send();
 
